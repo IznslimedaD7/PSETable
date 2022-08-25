@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Periodic table|Таблица Менделеева</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for ('static', filename= 'css/styletable.css') }}">
+	<meta charset="utf-8">
+	<link rel="shortcut icon" type="image/css" href="{{ url_for ('static', filename= 'img/icon.ico') }}">
+	<script type="text/javascript" src ="{{ url_for ('static', filename= 'js/script.js') }}"></script>
+</head>
+<body>
+<header>
+	<img src="{{ url_for ('static', filename= 'img/menu.png') }}" id="menuBut"></img>
+	<div class="menu-list">
+		<div id="backarrow">&#9650;</div>
+		<ul>
+			<li><a href="#" class="aboutProject">О проекте</a></li>
+			<li><a href="create-element" class="Anytable">Создать страницу</a></li>
+			<li><a href="login" class="Termins">Войти/Профиль</a></li>
+			<li><a href="#" class="FAQ">Поддержка и пожелания</a></li>
+		</ul>
+	</div>
+</header>
+<main>
+	<h1>Переодическая таблица химических элементов<br> М.И.Менделеева</h1>
+	<div class="table">
+			<div class="legend-table">
+			<div class="elem-el">
+				<div class="l-elem l-name">Символ</div>
+				<div class="elem-hr hr"></div>
+			</div>
+			<div class="AtMass-el">
+				<div class="l-atmass l-name">Относительная<br>атомная масса</div>
+				<div class="atmass-hr hr"></div>
+			</div>
+			<div class="Nru-el">
+				<div class="l-nru l-name">Название(рус)</div>
+				<div class="nru-hr hr"></div>
+			</div>
+			<div class="Nen-el">
+				<div class="l-nen l-name">Название(анг)</div>
+				<div class="nen-hr hr"></div>
+			</div>
+			<div class="num-el">
+				<div class="l-num l-name">Номер</div>
+				<div class="num-hr hr"></div>
+			</div>
+			<div class="oxst-el">
+				<div class="l-oxst l-name">Устойчивая степень<br>окисления</div>
+				<div class="oxst-hr hr"></div>
+			</div>
+			<div class="el-l el-p Al">
+				<div class="element-l">Al</div>
+				<div class="AtomMass-l">26,9815</div>
+				<div class="NameRu-l">Алюминий</div>
+				<div class="NameEn-l">Aluminium</div>
+				<div class="OxState-l">+3</div>
+				<div class="Num-l num-2-l">13</div>
+			</div>
+			</div>
+		<div class="group group-1">
+			<a href='/h' class="el el-s H">
+				<div class="element">H</div>
+				<div class="AtomMass">1,00794</div>
+				<div class="NameRu">Водород</div>
+				<div class="NameEn">Hydrogen</div>
+				<div class="OxState">+1</div>
+				<div class="Num">1</div>
+			</a>
+			<a href='/li' class="el el-s Li">
+				<div class="element">Li</div>
+				<div class="AtomMass">6,941</div>
+				<div class="NameRu">Литий</div>
+				<div class="NameEn">Lithium</div>
+				<div class="OxState">+1</div>
+				<div class="Num">3</div>
+			</a>
+			<a href='/na' class="el el-s Na">
+				<div class="element">Na</div>
+				<div class="AtomMass">22,9898</div>
+				<div class="NameRu">Натрий</div>
+				<div class="NameEn">Sodium</div>
+				<div class="OxState">+1</div>
+				<div class="Num num-2">11</div>
+			</a>
+			<a href='/k' class="el el-s K">
+				<div class="element">K</div>
+				<div class="AtomMass">39,0983</div>
+				<div class="NameRu">Калий</div>
+				<div class="NameEn">Potassium</div>
+				<div class="OxState">+1</div>
+				<div class="Num num-2">19</div>
+			</a>
+			<a href='/rb' class="el el-s Rb">
+				<div class="element">Rb</div>
+				<div class="AtomMass">85,4678</div>
+				<div class="NameRu">Рубидий</div>
+				<div class="NameEn">Rubidium</div>
+				<div class="OxState">+1</div>
+				<div class="Num num-2">37</div>
+			</a>
+			<a href='cs' class="el el-s Cs">
+				<div class="element">Cs</div>
+				<div class="AtomMass">132,9055</div>
+				<div class="NameRu">Цезий</div>
+				<div class="NameEn">Caesium</div>
+				<div class="OxState">+1</div>
+				<div class="Num num-2">55</div>
+			</a>
+			<a href='fr' class="el el-s Fr">
+				<div class="element">Fr</div>
+				<div class="AtomMass">[223]</div>
+				<div class="NameRu">Франций</div>
+				<div class="NameEn">Francium</div>
+				<div class="OxState">+1</div>
+				<div class="Num num-2">87</div>
+			</a>
+		</div>
+		<div class="group group-2">
+			<div class="el-empty"></div>
+			<a href='be' class="el el-s Be">
+				<div class="element">Be</div>
+				<div class="AtomMass">9,0122</div>
+				<div class="NameRu">Бериллий</div>
+				<div class="NameEn">Beryllium</div>
+				<div class="OxState">+2</div>
+				<div class="Num">4</div>
+			</a>
+			<a href='mg' class="el el-s Mg">
+				<div class="element">Mg</div>
+				<div class="AtomMass">24,305</div>
+				<div class="NameRu">Магний</div>
+				<div class="NameEn">Magnesium</div>
+				<div class="OxState">+2</div>
+				<div class="Num num-2">12</div>
+			</a>
+			<a href='ca' class="el el-s Ca">
+				<div class="element">Ca</div>
+				<div class="AtomMass">40,078</div>
+				<div class="NameRu">Кальций</div>
+				<div class="NameEn">Calcium</div>
+				<div class="OxState">+2</div>
+				<div class="Num num-2">20</div>
+			</a>
+			<a href='sr' class="el el-s Sr">
+				<div class="element">Sr</div>
+				<div class="AtomMass">87,62</div>
+				<div class="NameRu">Стронций</div>
+				<div class="NameEn">Strontium</div>
+				<div class="OxState">+2</div>
+				<div class="Num num-2">38</div>
+			</a>
+			<a href='ba' class="el el-s Ba">
+				<div class="element">Ba</div>
+				<div class="AtomMass">137,327</div>
+				<div class="NameRu">Барий</div>
+				<div class="NameEn">Barium</div>
+				<div class="OxState">+2</div>
+				<div class="Num num-2">56</div>
+			</a>
+			<a href='ra' class="el el-s Ra">
+				<div class="element">Ra</div>
+				<div class="AtomMass">226,0254</div>
+				<div class="NameRu">Радий</div>
+				<div class="NameEn">Radium</div>
+				<div class="OxState">+2</div>
+				<div class="Num num-2">88</div>
+			</a>
+		</div>
+		<div class="group group-3">
+			<div class="el-empty"></div>
+			<div class="el-empty"></div>
+			<div class="el-empty"></div>
+			<a href='sc' class="el el-d Sc">
+				<div class="element">Sc</div>
+				<div class="AtomMass">44,9559</div>
+				<div class="NameRu">Скандий</div>
+				<div class="NameEn">Scandium</div>
+				<div class="OxState">+3</div>
+				<div class="Num num-2">21</div>
+			</a>
+			<a href='y' class="el el-d Y">
+				<div class="element">Y</div>
+				<div class="AtomMass">88,9059</div>
+				<div class="NameRu">Иттрий</div>
+				<div class="NameEn">Yttrium</div>
+				<div class="OxState">+3</div>
+				<div class="Num num-2">39</div>
+			</a>
+			<a href='la' class="el el-d La">
+				<div class="element">La</div>
+				<div class="AtomMass">138,9055</div>
+				<div class="NameRu">Лантан</div>
+				<div class="NameEn">Lanthanum</div>
+				<div class="OxState">+3</div>
+				<div class="Num num-2">57</div>
+			</a>
+			<a href='ac' class="el el-d Ac">
+				<div class="element">Ac</div>
+				<div class="AtomMass">227,0278</div>
+				<div class="NameRu">Актиний</div>
+				<div class="NameEn">Actinium</div>
+				<div class="OxState">+3</div>
+				<div class="Num num-2">89</div>
+			</a>
+		</div>
+		<div class="group group-4">
+			<div class="el-empty"></div>
+			<div class="el-empty"></div>
+			<div class="el-empty"></div>
+			<a href='ti' class="el el-d Ti">
+				<div class="element">Ti</div>
+				<div class="AtomMass">47,867</div>
+				<div class="NameRu">Титан</div>
+				<div class="NameEn">Titanium</div>
+				<div class="OxState">+4</div>
+				<div class="Num num-2">22</div>
+			</a>
+			<a href='zr' class="el el-d Zr">
+				<div class="element">Zr</div>
+				<div class="AtomMass">91,224</div>
+				<div class="NameRu">Цирконий</div>
+				<div class="NameEn">Zirconium</div>
+				<div class="OxState">+4</div>
+				<div class="Num num-2">40</div>
+			</a>
+			<a href='hf' class="el el-d Hf">
+				<div class="element">Hf</div>
+				<div class="AtomMass">178,49</div>
+				<div class="NameRu">Графний</div>
+				<div class="NameEn">Hafnium</div>
+				<div class="OxState">+4</div>
+				<div class="Num num-2">72</div>
+			</a>
+			<a href='rf' class="el el-d Rf">
+				<div class="element">Rf</div>
+				<div class="AtomMass">[261]</div>
+				<div class="NameRu">Резерфордий</div>
+				<div class="NameEn">Rutherfordium</div>
+				<div class="Num num-2">72</div>
+			</a>
+		</div>
+		<div class="group group-5">
+			<div class="el-empty"></div>
+			<div class="el-empty"></div>
+			<div class="el-empty"></div>
+			<a href='v' class="el el-d V">
+				<div class="element">V</div>
+				<div class="AtomMass">50,9415</div>
+				<div class="NameRu">Ванадий</div>
+				<div class="NameEn">Vanadium</div>
+				<div class="OxState">+5</div>
+				<div class="Num num-2">23</div>
+			</a>
+				<a href='nb' class="el el-d Nb">
+				<div class="element">Nb</div>
+				<div class="AtomMass">92,9064</div>
+				<div class="NameRu">Ниобий</div>
+				<div class="NameEn">Niobium</div>
+				<div class="OxState">+5</div>
+				<div class="Num num-2">41</div>
+			</a>
+			<a href='ta' class="el el-d Ta">
+				<div class="element">Ta</div>
+				<div class="AtomMass">180,9479</div>
+				<div class="NameRu">Тантал</div>
+				<div class="NameEn">Tantalum</div>
+				<div class="OxState">+5</div>
+				<div class="Num num-2">73</div>
+			</a>
+			<a href='db' class="el el-d Db">
+				<div class="element">Db</div>
+				<div class="AtomMass">[262]</div>
+				<div class="NameRu">Дубний</div>
+				<div class="NameEn">Dubnium</div>
+				<div class="Num num-3">105</div>
+			</a>
+		</div>
+		<div class="group group-6">
+			<div class="el-empty"></div>
+			<div class="el-empty"></div>
+			<div class="el-empty"></div>
+			<a href='cr' class="el el-d Cr">
+				<div class="element">Cr</div>
+				<div class="AtomMass">51,9961</div>
+				<div class="NameRu">Хром</div>
+				<div class="NameEn">Chromium</div>
+				<div class="OxState">+3</div>
+				<div class="Num num-2">24</div>
+			</a>
+				<a href='mo' class="el el-d Mo">
+				<div class="element">Mo</div>
+				<div class="AtomMass">95,96</div>
+				<div class="NameRu">Молибден</div>
+				<div class="NameEn">Molybdenum</div>
+				<div class="OxState">+6</div>
+				<div class="Num num-2">42</div>
+			</a>
+			<a href='w' class="el el-d W">
+				<div class="element">W</div>
+				<div class="AtomMass">183,84</div>
+				<div class="NameRu">Вольфрам</div>
+				<div class="NameEn">Tungsten</div>
+				<div class="OxState">+6</div>
+				<div class="Num num-2">74</div>
+			</a>
+			<a href='sg' class="el el-d Sg">
+				<div class="element">Sg</div>
+				<div class="AtomMass">[263]</div>
+				<div class="NameRu">Сиборгий</div>
+				<div class="NameEn">Seaborgium</div>
+				<div class="Num num-3">106</div>
+			</a>
+		</div>
+		<div class="group group-7">
+			<div class="el-empty"></div>
+			<div class="el-empty"></div>
+			<div class="el-empty"></div>
+			<a href='mn' class="el el-d Mn">
+				<div class="element">Mn</div>
+				<div class="AtomMass">54,938</div>
+				<div class="NameRu">Марганец</div>
+				<div class="NameEn">Manganese</div>
+				<div class="OxState">+2<br>+4</div>
+				<div class="Num num-2">25</div>
+			</a>
+				<a href='tc' class="el el-d Tc">
+				<div class="element">Tc</div>
+				<div class="AtomMass">97,907</div>
+				<div class="NameRu">Технеций</div>
+				<div class="NameEn">Technetium</div>
+				<div class="OxState">+7</div>
+				<div class="Num num-2">43</div>
+			</a>
+			<a href='re' class="el el-d Re">
+				<div class="element">Re</div>
+				<div class="AtomMass">186,207</div>
+				<div class="NameRu">Рений</div>
+				<div class="NameEn">Rhenium</div>
+				<div class="OxState">+7</div>
+				<div class="Num num-2">75</div>
+			</a>
+			<a href='bh' class="el el-d Bh">
+				<div class="element">Bh</div>
+				<div class="AtomMass">[267]</div>
+				<div class="NameRu">Борий</div>
+				<div class="NameEn">Bohrium</div>
+				<div class="Num num-3">107</div>
+			</a>
+		</div>
+		<div class="group group-8">
+			<div class="el-empty"></div>
+			<div class="el-empty"></div>
+			<div class="el-empty"></div>
+			<a href='fe' class="el el-d Fe">
+				<div class="element">Fe</div>
+				<div class="AtomMass">55,845</div>
+				<div class="NameRu">Железо</div>
+				<div class="NameEn">Iron</div>
+				<div class="OxState">+3</div>
+				<div class="Num num-2">26</div>
+			</a>
+				<a href='ru' class="el el-d Ru">
+				<div class="element">Ru</div>
+				<div class="AtomMass">101,07</div>
+				<div class="NameRu">Рутений</div>
+				<div class="NameEn">Ruthenium</div>
+				<div class="OxState">+4</div>
+				<div class="Num num-2">44</div>
+			</a>
+			<a href='os' class="el el-d Os">
+				<div class="element">Os</div>
+				<div class="AtomMass">190,23</div>
+				<div class="NameRu">Осмий</div>
+				<div class="NameEn">Osmium</div>
+				<div class="OxState">+2<br>+8</div>
+				<div class="Num num-2">76</div>
+			</a>
+			<a href='hs' class="el el-d Hs">
+				<div class="element">Hs</div>
+				<div class="AtomMass">[269]</div>
+				<div class="NameRu">Хассий</div>
+				<div class="NameEn">Hassium</div>
+				<div class="Num num-3">108</div>
+			</a>
+		</div>
+		<div class="group group-9">
+			<div class="el-empty"></div>
+			<div class="el-empty"></div>
+			<div class="el-empty"></div>
+			<a href='co' class="el el-d Co">
+				<div class="element">Co</div>
+				<div class="AtomMass">58,9332</div>
+				<div class="NameRu">Кобальт</div>
+				<div class="NameEn">Cobalt</div>
+				<div class="OxState">+2</div>
+				<div class="Num num-2">27</div>
+			</a>
+				<a href='rh' class="el el-d Rh">
+				<div class="element">Rh</div>
+				<div class="AtomMass">102,9055</div>
+				<div class="NameRu">Родий</div>
+				<div class="NameEn">Rhodium</div>
+				<div class="OxState">+3</div>
+				<div class="Num num-2">45</div>
+			</a>
+			<a href='ir' class="el el-d Ir">
+				<div class="element">Ir</div>
+				<div class="AtomMass">192,217</div>
+				<div class="NameRu">Иридий</div>
+				<div class="NameEn">Iriium</div>
+				<div class="OxState">+3<br>+4</div>
+				<div class="Num num-2">77</div>
+			</a>
+			<a href='mt' class="el el-d Mt">
+				<div class="element">Mt</div>
+				<div class="AtomMass">[278]</div>
+				<div class="NameRu">Мейтнерий</div>
+				<div class="NameEn">Meitnerium</div>
+				<div class="Num num-3">109</div>
+			</a>
+		</div>
+		<div class="group group-10">
+			<div class="el-empty"></div>
+			<div class="el-empty"></div>
+			<div class="el-empty"></div>
+			<a href='ni' class="el el-d Ni">
+				<div class="element">Ni</div>
+				<div class="AtomMass">58,6934</div>
+				<div class="NameRu">Никель</div>
+				<div class="NameEn">Nickel</div>
+				<div class="OxState">+2</div>
+				<div class="Num num-2">28</div>
+			</a>
+				<a href='pd' class="el el-d Pd">
+				<div class="element">Pd</div>
+				<div class="AtomMass">106,42</div>
+				<div class="NameRu">Палладий</div>
+				<div class="NameEn">Palladium</div>
+				<div class="OxState">+2</div>
+				<div class="Num num-2">46</div>
+			</a>
+			<a href='pt' class="el el-d Pt">
+				<div class="element">Pt</div>
+				<div class="AtomMass">195,084</div>
+				<div class="NameRu">Платина</div>
+				<div class="NameEn">Platinum</div>
+				<div class="OxState">+2<br>+4</div>
+				<div class="Num num-2">78</div>
+			</a>
+			<a href='ds' class="el el-d Ds">
+				<div class="element">Ds</div>
+				<div class="AtomMass">[281]</div>
+				<div class="NameRu">Дармштадтий</div>
+				<div class="NameEn">Darmstadtium</div>
+				<div class="Num num-3">110</div>
+			</a>
+		</div>
+		<div class="group group-11">
+			<div class="el-empty"></div>
+			<div class="el-empty"></div>
+			<div class="el-empty"></div>
+			<a href='cu' class="el el-d Cu">
+				<div class="element">Cu</div>
+				<div class="AtomMass">63,546</div>
+				<div class="NameRu">Медь</div>
+				<div class="NameEn">Copper</div>
+				<div class="OxState">+2</div>
+				<div class="Num num-2">29</div>
+			</a>
+				<a href='ag' class="el el-d Ag">
+				<div class="element">Ag</div>
+				<div class="AtomMass">107,8682</div>
+				<div class="NameRu">Серебро</div>
+				<div class="NameEn">Silver</div>
+				<div class="OxState">+1</div>
+				<div class="Num num-2">47</div>
+			</a>
+			<a href='au' class="el el-d Au">
+				<div class="element">Au</div>
+				<div class="AtomMass">196,9666</div>
+				<div class="NameRu">Золото</div>
+				<div class="NameEn">Gold</div>
+				<div class="OxState">+3</div>
+				<div class="Num num-2">78</div>
+			</a>
+			<a href='rg' class="el el-d Rg">
+				<div class="element">Rg</div>
+				<div class="AtomMass">[281]</div>
+				<div class="NameRu">Рентгений</div>
+				<div class="NameEn">Roentgenium</div>
+				<div class="Num num-3">111</div>
+			</a>
+		</div>
+		<div class="group group-12">
+			<div class="el-empty"></div>
+			<div class="el-empty"></div>
+			<div class="el-empty"></div>
+			<a href='zn' class="el el-d Zn">
+				<div class="element">Zn</div>
+				<div class="AtomMass">65,38</div>
+				<div class="NameRu">Цинк</div>
+				<div class="NameEn">Zinc</div>
+				<div class="OxState">+2</div>
+				<div class="Num num-2">30</div>
+			</a>
+				<a href='cd' class="el el-d Cd">
+				<div class="element">Cd</div>
+				<div class="AtomMass">112,411</div>
+				<div class="NameRu">Кадмий</div>
+				<div class="NameEn">Cadmium</div>
+				<div class="OxState">+2</div>
+				<div class="Num num-2">48</div>
+			</a>
+			<a href='hg' class="el el-d Hg">
+				<div class="element">Hg</div>
+				<div class="AtomMass">200,59</div>
+				<div class="NameRu">Ртуть</div>
+				<div class="NameEn">Mercury</div>
+				<div class="OxState">+2</div>
+				<div class="Num num-2">80</div>
+			</a>
+			<a href='cn' class="el el-d Cn">
+				<div class="element">Cn</div>
+				<div class="AtomMass">[285]</div>
+				<div class="NameRu">Коперниций</div>
+				<div class="NameEn">Copernicium</div>
+				<div class="Num num-3">112</div>
+			</a>
+		</div>
+		<div class="group group-13">
+			<div class="el-empty"></div>
+			<a href='b' class="el el-p B">
+				<div class="element">B</div>
+				<div class="AtomMass">10,811</div>
+				<div class="NameRu">Бор</div>
+				<div class="NameEn">Boron</div>
+				<div class="OxState">+3</div>
+				<div class="Num">5</div>
+			</a>
+			<a href='al' class="el el-p Al">
+				<div class="element">Al</div>
+				<div class="AtomMass">26,9815</div>
+				<div class="NameRu">Алюминий</div>
+				<div class="NameEn">Aluminium</div>
+				<div class="OxState">+3</div>
+				<div class="Num num-2">13</div>
+			</a>
+			<a href='ga' class="el el-p Ga">
+				<div class="element">Ga</div>
+				<div class="AtomMass">69,723</div>
+				<div class="NameRu">Галлий</div>
+				<div class="NameEn">Gallium</div>
+				<div class="OxState">+3</div>
+				<div class="Num num-2">31</div>
+			</a>
+			<a href='in' class="el el-p In">
+				<div class="element">In</div>
+				<div class="AtomMass">114,818</div>
+				<div class="NameRu">Индий</div>
+				<div class="NameEn">Indium</div>
+				<div class="OxState">+3</div>
+				<div class="Num num-2">49</div>
+			</a>
+			<a href='tl' class="el el-p Tl">
+				<div class="element">Tl</div>
+				<div class="AtomMass">204,3833</div>
+				<div class="NameRu">Таллий</div>
+				<div class="NameEn">Thallium</div>
+				<div class="OxState">+1</div>
+				<div class="Num num-2">81</div>
+			</a>
+			<a href='nh' class="el el-p Nh">
+				<div class="element">Nh</div>
+				<div class="AtomMass">[286]</div>
+				<div class="NameRu">Нихоний</div>
+				<div class="NameEn">Nihonium</div>
+				<div class="Num num-3">113</div>
+			</a>
+		</div>
+		<div class="group group-14">
+			<div class="el-empty"></div>
+			<a href='c' class="el el-p C">
+				<div class="element">C</div>
+				<div class="AtomMass">12,0107</div>
+				<div class="NameRu">Углерод</div>
+				<div class="NameEn">Carbon</div>
+				<div class="OxState">+4</div>
+				<div class="Num">6</div>
+			</a>
+			<a href='si' class="el el-p Si">
+				<div class="element">Si</div>
+				<div class="AtomMass">28,0855</div>
+				<div class="NameRu">Кремний</div>
+				<div class="NameEn">Silicon</div>
+				<div class="OxState">+4</div>
+				<div class="Num num-2">14</div>
+			</a>
+			<a href='ge' class="el el-p Ge">
+				<div class="element">Ge</div>
+				<div class="AtomMass">72,63</div>
+				<div class="NameRu">Галлий</div>
+				<div class="NameEn">Gallium</div>
+				<div class="OxState">+4</div>
+				<div class="Num num-2">32</div>
+			</a>
+			<a href='sn' class="el el-p Sn">
+				<div class="element">Sn</div>
+				<div class="AtomMass">118,71</div>
+				<div class="NameRu">Олово</div>
+				<div class="NameEn">Tin</div>
+				<div class="OxState">+4</div>
+				<div class="Num num-2">50</div>
+			</a>
+			<a href='pb' class="el el-p Pb">
+				<div class="element">Pb</div>
+				<div class="AtomMass">207,2</div>
+				<div class="NameRu">Свинец</div>
+				<div class="NameEn">Lead</div>
+				<div class="OxState">+2</div>
+				<div class="Num num-2">82</div>
+			</a>
+			<a href='fl' class="el el-p Fl">
+				<div class="element">Fl</div>
+				<div class="AtomMass">[289]</div>
+				<div class="NameRu">Флевроний</div>
+				<div class="NameEn">Flerovium</div>
+				<div class="Num num-3">114</div>
+			</a>
+		</div>
+		<div class="group group-15">
+			<div class="el-empty"></div>
+			<a href='n' class="el el-p N">
+				<div class="element">N</div>
+				<div class="AtomMass">14,0067</div>
+				<div class="NameRu">Азот</div>
+				<div class="NameEn">Nitrogen</div>
+				<div class="OxState">-3<br>+4</div>
+				<div class="Num">7</div>
+			</a>
+			<a href='p' class="el el-p P">
+				<div class="element">P</div>
+				<div class="AtomMass">30,9738</div>
+				<div class="NameRu">Фосфор</div>
+				<div class="NameEn">Phosphorus</div>
+				<div class="OxState">+5</div>
+				<div class="Num num-2">15</div>
+			</a>
+			<a href='as' class="el el-p As">
+				<div class="element">As</div>
+				<div class="AtomMass">74,9216</div>
+				<div class="NameRu">Мышьяк</div>
+				<div class="NameEn">Arsenic</div>
+				<div class="OxState">+3</div>
+				<div class="Num num-2">33</div>
+			</a>
+			<a href='sb' class="el el-p Sb">
+				<div class="element">Sb</div>
+				<div class="AtomMass">121,76</div>
+				<div class="NameRu">Сурьма</div>
+				<div class="NameEn">Antimony</div>
+				<div class="OxState">+3</div>
+				<div class="Num num-2">51</div>
+			</a>
+			<a href='bi' class="el el-p Bi">
+				<div class="element">Bi</div>
+				<div class="AtomMass">208,9804</div>
+				<div class="NameRu">Висмут</div>
+				<div class="NameEn">Bismuth</div>
+				<div class="OxState">+3</div>
+				<div class="Num num-2">83</div>
+			</a>
+			<a href='mc' class="el el-p Mc">
+				<div class="element">Mc</div>
+				<div class="AtomMass">[289]</div>
+				<div class="NameRu">Московий</div>
+				<div class="NameEn">Moscovium</div>
+				<div class="Num num-3">115</div>
+			</a>
+		</div>
+		<div class="group group-16">
+			<div class="el-empty"></div>
+			<a href='o' class="el el-p O">
+				<div class="element">O</div>
+				<div class="AtomMass">15,9994</div>
+				<div class="NameRu">Кислород</div>
+				<div class="NameEn">Oxygen</div>
+				<div class="OxState">-2</div>
+				<div class="Num">8</div>
+			</a>
+			<a href='s' class="el el-p S">
+				<div class="element">S</div>
+				<div class="AtomMass">32,066</div>
+				<div class="NameRu">Сера</div>
+				<div class="NameEn">Sulfur</div>
+				<div class="OxState">+6</div>
+				<div class="Num num-2">16</div>
+			</a>
+			<a href='se' class="el el-p Se">
+				<div class="element">Se</div>
+				<div class="AtomMass">78,96</div>
+				<div class="NameRu">Селен</div>
+				<div class="NameEn">Selenium</div>
+				<div class="OxState">+4</div>
+				<div class="Num num-2">34</div>
+			</a>
+			<a href='te' class="el el-p Te">
+				<div class="element">Te</div>
+				<div class="AtomMass">127,6</div>
+				<div class="NameRu">Теллур</div>
+				<div class="NameEn">Tellutium</div>
+				<div class="OxState">+4</div>
+				<div class="Num num-2">52</div>
+			</a>
+			<a href='po' class="el el-p Po">
+				<div class="element">Po</div>
+				<div class="AtomMass">208,98</div>
+				<div class="NameRu">Полоний</div>
+				<div class="NameEn">Polonium</div>
+				<div class="OxState">+4</div>
+				<div class="Num num-2">84</div>
+			</a>
+			<a href='lv' class="el el-p Lv">
+				<div class="element">l</div>
+				<div class="AtomMass">[293]</div>
+				<div class="NameRu">Ливерморий</div>
+				<div class="NameEn">Livermorium</div>
+				<div class="Num num-3">116</div>
+			</a>
+		</div>
+		<div class="group group-17">
+			<div class="el-empty"></div>
+			<a href='f' class="el el-p F">
+				<div class="element">F</div>
+				<div class="AtomMass">18,9984</div>
+				<div class="NameRu">Фтор</div>
+				<div class="NameEn">Fluorine</div>
+				<div class="OxState">-1</div>
+				<div class="Num">9</div>
+			</a>
+			<a href='cl' class="el el-p Cl">
+				<div class="element">Cl</div>
+				<div class="AtomMass">35,4527</div>
+				<div class="NameRu">Сера</div>
+				<div class="NameEn">Sulfur</div>
+				<div class="OxState">-1</div>
+				<div class="Num num-2">17</div>
+			</a>
+			<a href='br' class="el el-p Br">
+				<div class="element">Br</div>
+				<div class="AtomMass">79,904</div>
+				<div class="NameRu">Бром</div>
+				<div class="NameEn">Bromine</div>
+				<div class="OxState">-1</div>
+				<div class="Num num-2">35</div>
+			</a>
+			<a href='i' class="el el-p I">
+				<div class="element">I</div>
+				<div class="AtomMass">126,9045</div>
+				<div class="NameRu">Йод</div>
+				<div class="NameEn">Iodine</div>
+				<div class="OxState">-1</div>
+				<div class="Num num-2">53</div>
+			</a>
+			<a href='at' class="el el-p At">
+				<div class="element">At</div>
+				<div class="AtomMass">[210]</div>
+				<div class="NameRu">Астат</div>
+				<div class="NameEn">Astatine</div>
+				<div class="OxState">-1</div>
+				<div class="Num num-2">85</div>
+			</a>
+			<a href='ts' class="el el-p Ts">
+				<div class="element">Ts</div>
+				<div class="AtomMass">[294]</div>
+				<div class="NameRu">Теннессин</div>
+				<div class="NameEn">Tennessine</div>
+				<div class="Num num-3">117</div>
+			</a>
+		</div>
+			<div class="group group-18">
+			<a href='he' class="el el-s He">
+				<div class="element">He</div>
+				<div class="AtomMass">4,0026</div>
+				<div class="NameRu">Гелий</div>
+				<div class="NameEn">Hellium</div>
+				<div class="OxState">0</div>
+				<div class="Num">2</div>
+			</a>
+			<a href='ne' class="el el-p Ne">
+				<div class="element">Ne</div>
+				<div class="AtomMass">20,1797</div>
+				<div class="NameRu">Неон</div>
+				<div class="NameEn">Neon</div>
+				<div class="OxState">0</div>
+				<div class="Num num-2">10</div>
+			</a>
+			<a href='ar' class="el el-p Ar">
+				<div class="element">Ar</div>
+				<div class="AtomMass">39,948</div>
+				<div class="NameRu">Аргон</div>
+				<div class="NameEn">Argon</div>
+				<div class="OxState">0</div>
+				<div class="Num num-2">18</div>
+			</a>
+			<a href='kr' class="el el-p Kr">
+				<div class="element">Kr</div>
+				<div class="AtomMass">83,798</div>
+				<div class="NameRu">Криптон</div>
+				<div class="NameEn">Krypton</div>
+				<div class="OxState">+2</div>
+				<div class="Num num-2">36</div>
+			</a>
+			<a href='xe' class="el el-p Xe">
+				<div class="element">Xe</div>
+				<div class="AtomMass">131,29</div>
+				<div class="NameRu">Ксенон</div>
+				<div class="NameEn">Xenon</div>
+				<div class="OxState">+6</div>
+				<div class="Num num-2">54</div>
+			</a>
+			<a href='rn' class="el el-p Rn">
+				<div class="element">Rn</div>
+				<div class="AtomMass">[222]</div>
+				<div class="NameRu">Радон</div>
+				<div class="NameEn">Radon</div>
+				<div class="OxState">+2</div>
+				<div class="Num num-2">86</div>
+			</a>
+			<a href='og' class="el el-p Og">
+				<div class="element">Og</div>
+				<div class="AtomMass">[294]</div>
+				<div class="NameRu">Оганесон</div>
+				<div class="NameEn">Oganesson</div>
+				<div class="Num num-3">118</div>
+			</a>
+		</div>
+		<div class="group group-lant">
+			<a href='ce' class="el el-fl Ce">
+				<div class="element">Ce</div>
+				<div class="AtomMass">140,116</div>
+				<div class="NameRu">Церий</div>
+				<div class="NameEn">Cerium</div>
+				<div class="OxState">+3</div>
+				<div class="Num num-2">58</div>
+			</a>
+			<a href='pr' class="el el-fl Pr">
+				<div class="element">Pr</div>
+				<div class="AtomMass">140,9077</div>
+				<div class="NameRu">Празеодим</div>
+				<div class="NameEn">Praseodymium</div>
+				<div class="OxState">+3</div>
+				<div class="Num num-2">59</div>
+			</a>
+			<a href='nd' class="el el-fl Nd">
+				<div class="element">Nd</div>
+				<div class="AtomMass">144,24</div>
+				<div class="NameRu">Неодим</div>
+				<div class="NameEn">Neodymium</div>
+				<div class="OxState">+3</div>
+				<div class="Num num-2">60</div>
+			</a>
+			<a href='pm' class="el el-fl Pm">
+				<div class="element">Pm</div>
+				<div class="AtomMass">[145]</div>
+				<div class="NameRu">Прометий</div>
+				<div class="NameEn">Promethium</div>
+				<div class="OxState">+3</div>
+				<div class="Num num-2">61</div>
+			</a>
+			<a href='sm' class="el el-fl Sm">
+				<div class="element">Sm</div>
+				<div class="AtomMass">150,36</div>
+				<div class="NameRu">Самарий</div>
+				<div class="NameEn">Samarium</div>
+				<div class="OxState">+3</div>
+				<div class="Num num-2">62</div>
+			</a>
+			<a href='eu' class="el el-fl Eu">
+				<div class="element">Eu</div>
+				<div class="AtomMass">151,964</div>
+				<div class="NameRu">Европий</div>
+				<div class="NameEn">Europium</div>
+				<div class="OxState">+3</div>
+				<div class="Num num-2">63</div>
+			</a>
+			<a href='gd' class="el el-fl Gd">
+				<div class="element">Gd</div>
+				<div class="AtomMass">157,27</div>
+				<div class="NameRu">Гадолиний</div>
+				<div class="NameEn">Gadolinium</div>
+				<div class="OxState">+3</div>
+				<div class="Num num-2">64</div>
+			</a>
+			<a href='tb' class="el el-fl Tb">
+				<div class="element">Tb</div>
+				<div class="AtomMass">158,9253</div>
+				<div class="NameRu">Тербий</div>
+				<div class="NameEn">Terbium</div>
+				<div class="OxState">+3</div>
+				<div class="Num num-2">65</div>
+			</a>
+			<a href='dy' class="el el-fl Dy">
+				<div class="element">Dy</div>
+				<div class="AtomMass">162,5</div>
+				<div class="NameRu">Диспрозий</div>
+				<div class="NameEn">Dysprosium</div>
+				<div class="OxState">+3</div>
+				<div class="Num num-2">66</div>
+			</a>
+			<a href='ho' class="el el-fl Ho">
+				<div class="element">Ho</div>
+				<div class="AtomMass">164,9303</div>
+				<div class="NameRu">Гольмий</div>
+				<div class="NameEn">Holmium</div>
+				<div class="OxState">+3</div>
+				<div class="Num num-2">67</div>
+			</a>
+			<a href='er' class="el el-fl Er">
+				<div class="element">Er</div>
+				<div class="AtomMass">167,26</div>
+				<div class="NameRu">Эрбий</div>
+				<div class="NameEn">Erbium</div>
+				<div class="OxState">+3</div>
+				<div class="Num num-2">68</div>
+			</a>
+			<a href='tm' class="el el-fl Tm">
+				<div class="element">Tm</div>
+				<div class="AtomMass">168,9342</div>
+				<div class="NameRu">Тулий</div>
+				<div class="NameEn">Thulium</div>
+				<div class="OxState">+3</div>
+				<div class="Num num-2">69</div>
+			</a>
+			<a href='yb' class="el el-fl Yb">
+				<div class="element">Yb</div>
+				<div class="AtomMass">173,045</div>
+				<div class="NameRu">Иттербий</div>
+				<div class="NameEn">Ytterbium</div>
+				<div class="OxState">+3</div>
+				<div class="Num num-2">70</div>
+			</a>
+			<a href='lu' class="el el-fl Lu">
+				<div class="element">Lu</div>
+				<div class="AtomMass">174,967</div>
+				<div class="NameRu">Лютеций</div>
+				<div class="NameEn">Lutetium</div>
+				<div class="OxState">+3</div>
+				<div class="Num num-2">71</div>
+			</a>
+		</div>
+		<div class="group group-act">
+			<a href='th' class="el el-fa Th">
+				<div class="element">Th</div>
+				<div class="AtomMass">232,0381</div>
+				<div class="NameRu">Торий</div>
+				<div class="NameEn">Thorium</div>
+				<div class="OxState">+4</div>
+				<div class="Num num-2">90</div>
+			</a>
+			<a href='pa' class="el el-fa Pa">
+				<div class="element">Pa</div>
+				<div class="AtomMass">231,0359</div>
+				<div class="NameRu">Протактиний</div>
+				<div class="NameEn">Protactinium</div>
+				<div class="OxState">+5</div>
+				<div class="Num num-2">91</div>
+			</a>
+			<a href='u' class="el el-fa U">
+				<div class="element">U</div>
+				<div class="AtomMass">238,0289</div>
+				<div class="NameRu">Уран</div>
+				<div class="NameEn">Uranium</div>
+				<div class="OxState">+6</div>
+				<div class="Num num-2">92</div>
+			</a>
+			<a href='np' class="el el-fa Np">
+				<div class="element">Np</div>
+				<div class="AtomMass">237,0482</div>
+				<div class="NameRu">Нептуний</div>
+				<div class="NameEn">Neptunium</div>
+				<div class="OxState">+5</div>
+				<div class="Num num-2">93</div>
+			</a>
+			<a href='pu' class="el el-fa Pu">
+				<div class="element">Pu</div>
+				<div class="AtomMass">[244]</div>
+				<div class="NameRu">Плутоний</div>
+				<div class="NameEn">Plutonium</div>
+				<div class="OxState">+3<br>+4</div>
+				<div class="Num num-2">94</div>
+			</a>
+			<a href='am' class="el el-fa Am">
+				<div class="element">Am</div>
+				<div class="AtomMass">[243]</div>
+				<div class="NameRu">Америций</div>
+				<div class="NameEn">Americium</div>
+				<div class="OxState">+3</div>
+				<div class="Num num-2">95</div>
+			</a>
+			<a href='cm' class="el el-fa Cm">
+				<div class="element">Cm</div>
+				<div class="AtomMass">[247]</div>
+				<div class="NameRu">Кюрий</div>
+				<div class="NameEn">Curlum</div>
+				<div class="OxState">+3</div>
+				<div class="Num num-2">96</div>
+			</a>
+			<a href='bk' class="el el-fa Bk">
+				<div class="element">Bk</div>
+				<div class="AtomMass">[247]</div>
+				<div class="NameRu">Берклий</div>
+				<div class="NameEn">Berkelium</div>
+				<div class="OxState">+3</div>
+				<div class="Num num-2">97</div>
+			</a>
+			<a href='cf' class="el el-fa Сf">
+				<div class="element">Cf</div>
+				<div class="AtomMass">[251]</div>
+				<div class="NameRu">Калифорний</div>
+				<div class="NameEn">Californium</div>
+				<div class="OxState">+3</div>
+				<div class="Num num-2">98</div>
+			</a>
+			<a href='es' class="el el-fa Es">
+				<div class="element">Es</div>
+				<div class="AtomMass">[252]</div>
+				<div class="NameRu">Эйнштейний</div>
+				<div class="NameEn">Einsteinium</div>
+				<div class="OxState">+3</div>
+				<div class="Num num-2">99</div>
+			</a>
+			<a href='fm' class="el el-fa Fm">
+				<div class="element">Fm</div>
+				<div class="AtomMass">[257]</div>
+				<div class="NameRu">Фермий</div>
+				<div class="NameEn">Fermium</div>
+				<div class="OxState">+3</div>
+				<div class="Num num-3">100</div>
+			</a>
+			<a href='md' class="el el-fa Md">
+				<div class="element">Md</div>
+				<div class="AtomMass">[258]</div>
+				<div class="NameRu">Менделевий</div>
+				<div class="NameEn">Mendelevium</div>
+				<div class="OxState">+3</div>
+				<div class="Num num-3">101</div>
+			</a>
+			<a href='no' class="el el-fa No">
+				<div class="element">No</div>
+				<div class="AtomMass">[259]</div>
+				<div class="NameRu">Нобелий</div>
+				<div class="NameEn">Nobelium</div>
+				<div class="OxState">+2</div>
+				<div class="Num num-3">102</div>
+			</a>
+			<a href='lr' class="el el-fa Lr">
+				<div class="element">Lr</div>
+				<div class="AtomMass">[260]</div>
+				<div class="NameRu">Лауренсий</div>
+				<div class="NameEn">Lawrencium</div>
+				<div class="OxState">+3</div>
+				<div class="Num num-3">103</div>
+			</a>
+		</div>
+	</div>
+</main>
+</body>
+</html>

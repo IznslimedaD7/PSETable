@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ table_elem.title }}
+{% endblock %}
+{% block main %}
+<a href="{{ table_elem.name }}/redact">{{ table_elem.title }}</a>
+{% endblock %}
+{% block content %}
+{{ table_elem.body|safe }}
+{% endblock %}

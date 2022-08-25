@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Редактирование элемента {{ table_elem.title }}
+{% endblock %}
+{% block content %}
+<div>
+    <h1>Редактировать элемент {{ table_elem.title }}</h1>
+    <form method="post">
+        <input type="text" name="title" id="title" class="form_control" placeholder="Полное название элемента(рус)" value='{{ table_elem.title }}'><br>
+        {{ ckeditor.load(pkg_type="full") }}
+        {{ ckeditor.create(value=table_elem.body)}}
+        <input type="submit" class="btn btn-success" value="Потвердить редактирование">
+    </form>
+</div>
+{% endblock %}

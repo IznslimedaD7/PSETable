@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Профиль
+{% endblock %}
+{% block main %}
+Ваш профиль
+{% endblock %}
+{% block content %}
+<p>Имя: {{ current_user.nickname }}</p>
+<a href="/logout">Выйти</a>
+{% endblock %}

@@ -1,0 +1,357 @@
+@font-face {font-family: calibri; src: url(assets/fonts/calibri.ttf);}
+
+main > h1 {
+	font-family: calibri;
+	text-align: center;
+}
+
+.table{
+	overflow: hidden;
+	display: block;
+	width: calc(62px * 18);
+	margin-left: auto;
+	margin-right: auto;
+
+	transition: all 0.8s ease 0s;
+	transform: translate(-120%, 0);
+	opacity: 0
+}
+
+#menuBut{
+	display: block;
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	cursor: pointer
+}
+
+.menu-list{
+	background-color: #9D9D9D;
+	color: #454545;
+	width: auto;
+	height: auto;
+	border-radius: 7px;
+	position: absolute;
+	text-align: left;
+	z-index: 4;
+	display: none;
+	opacity: 0;
+	transition:  1s ease 2s;
+}
+
+.menu-list ul{
+	padding: 10px;
+}
+
+.menu-list li a{
+	color: #454545;
+	text-decoration: none;
+}
+
+.menu-list li{
+	list-style-type: none;
+	font-family: calibri;
+	font-weight: bold;
+	background: #BEBEBE;
+	border-radius: 7px;
+	padding: 5px;
+	margin-bottom: 4px
+}
+
+#backarrow{
+	position: absolute;
+	cursor: pointer;
+	left: 12px;
+    top: 6px;
+}
+
+
+.group{
+	display: block;
+	float: left;
+}
+
+.group-lant{
+	display: block;
+	margin: 30px 0 0 calc(62px * 3);
+	font-size: 0
+}
+
+.group-act{
+	display: block;
+	margin: 0 0 0 calc(62px * 3);
+	font-size: 0
+}
+
+.el{
+	display: block;
+	position: relative;
+	height: 60px;
+	width: 60px;
+	border-color: #000000;
+	border: 1px solid;	
+	color: #000000
+}
+
+
+.el-empty {
+	display: block;
+	position: relative;
+	height: 60px;
+	width: 60px;
+	border: 1px solid transparent;
+}
+
+.el-s{
+	background-color: #d2748e;
+}
+
+.el-p{
+	background-color: #f6dd5e
+}
+
+.el-d{
+	background-color: #7fc1db;
+}
+.el-fl{
+	background-color: #c3d9b3;
+	display: inline-block;
+	font-size: 0
+}
+.el-fa{
+	background-color: #9cbd84;
+	display: inline-block;
+	font-size: 0
+}
+
+.element{
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	font-size: 32px;
+	font-family: calibri;
+	padding-left: 2px;
+}
+
+.NameRu, .NameEn, .AtomMass{
+	position: absolute;
+	font-size: 9px;
+	font-family: calibri;
+	padding-left: 2px;
+	width: 9px;
+	height: 9px;
+}
+
+.NameRu{
+	padding-top: 39px;
+	font-weight: bold;
+}
+
+.NameEn{
+	padding-top: 48px;
+}
+
+.AtomMass{
+	padding-top: 31px;
+}
+
+.Num{
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	font-size: 16px;
+	font-family: calibri;
+	font-weight: bold;
+	padding-left: 47px;
+	top: -4px;
+}
+
+.OxState{
+	position: absolute;
+	font-size: 9px;
+	font-family: calibri;
+	width: 9px;
+	height: 9px;
+	padding-left: 47px;
+	padding-top: 31px;
+}
+
+.num-2{
+	padding-left: 43px;
+}
+
+.num-3{
+	padding-left: 35px;
+}
+
+.anim{
+	transform: translate(0px, 0px);
+	opacity: 1
+}
+
+.vis{
+	display: block;
+	opacity: 1
+}
+
+.element{
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	font-size: 32px;
+	font-family: calibri;
+	padding-left: 2px;
+}
+
+.legend-table{
+	z-index: 3
+}
+
+.el-l{
+	display: block;
+	position: absolute;
+	left: 377px;
+	top: 50px;
+	height: 100px;
+	width: 100px;
+	border-color: #000000;
+	border: 2px solid;	
+	color: #000000
+}
+
+.element-l{
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	font-size: 50px;
+	font-family: calibri;
+	padding-left: 2px;
+}
+
+.NameRu-l, .NameEn-l, .AtomMass-l{
+	position: absolute;
+	font-size: 14px;
+	font-family: calibri;
+	padding-left: 2px;
+	width: 9px;
+	height: 9px;
+}
+
+.NameRu-l{
+	padding-top: 66px;
+	font-weight: bold;
+}
+
+.NameEn-l{
+	padding-top: 81px;
+}
+
+.AtomMass-l{
+	padding-top: 52px;
+}
+
+.Num-l{
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	font-size: 23px;
+	font-family: calibri;
+	font-weight: bold;
+	padding-left: 70px;
+	padding-top: 1px;
+}
+
+.OxState-l{
+	position: absolute;
+	font-size: 14px;
+	font-family: calibri;
+	width: 9px;
+	height: 9px;
+	padding-left: 79px;
+	padding-top: 51px;
+}
+
+.hr{
+	display: block;
+	position: absolute;
+	background-color: black;
+	z-index: 4
+}
+.elem-hr{
+	width: 50px;
+    height: 2px;
+    left: 336px;
+    top: 75px;
+}
+
+.l-name{
+	position: absolute;
+	font-family: calibri;
+	font-size: 15px;
+}
+
+.l-elem{
+	left: 284px;
+    top: 64px;
+}
+
+.atmass-hr{
+	width: 46px;
+    height: 2px;
+    left: 336px;
+    top: 111px;
+}
+
+.l-atmass{
+	left: 237px;
+    top: 84px;
+}
+
+.nru-hr{
+	width: 46px;
+    height: 2px;
+    left: 336px;
+    top: 126px;
+}
+
+.l-nru{
+	left: 243px;
+    top: 117px;
+    font-weight: bold;
+}
+
+.nen-hr{
+	width: 46px;
+    height: 2px;
+    left: 336px;
+    top: 141px;
+}
+
+.l-nen{
+	left: 243px;
+    top: 132px;
+}
+
+.num-hr{
+	width: 46px;
+    height: 2px;
+    left: 471px;
+    top: 66px;
+}
+
+.l-num{
+	left: 523px;
+    top: 57px;
+}
+
+.oxst-hr{
+	width: 46px;
+    height: 2px;
+    left: 471px;
+    top: 111px;
+}
+
+.l-oxst{
+	left: 523px;
+    top: 93px;
+}

@@ -1,0 +1,41 @@
+@font-face {font-family: calibri; src: url(../fonts/calibri.ttf);}
+
+*{
+	font-family: calibri;
+	margin: 0;
+}
+
+header{
+	width: 150px;
+	position: fixed;
+	height: 100%;
+	background-color: #5a87c8;
+	text-align: center;
+
+}
+
+nav .logo img{
+	width: 80px;
+	height: 80px;
+}
+
+nav div a{
+	width: 80px;
+	height: 80px;
+	background-color: gray;
+	border-radius: 46px;
+	display: block;
+	margin: 0 auto;
+    margin-top: 12px;
+}
+main{
+	left: 200px;
+	top: 50px;
+	position: absolute;
+}
+
+nav div img{
+    margin-top: 6px;
+    width: 60px;
+	height: 60px;
+}

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Вход
+{% endblock %}
+{% block main %}
+Вход
+{% endblock %}
+{% block content %}
+<form method="post">
+    <input type="text" name="nickname" id="nickname" class="form_control" placeholder="Никнейм"><br>
+    <input type="password" name="password" id="password" class="form_control" placeholder="Пароль"><br>
+    <input type="submit" class="btn btn-success" value="Войти">
+</form>
+<p class="sign-out-p">Нет аккаунта? <a href="/reg">Создать</a> </p>
+{% endblock %}

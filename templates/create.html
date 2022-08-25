@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Создать элемент
+{% endblock %}
+{% block content %}
+<div>
+    <h1>Создать элемент</h1>
+    <form method="post">
+        <input type="text" name="title" id="title" class="form_control" placeholder="Полное нозвание элемента(рус)"><br>
+        <input type="text" name="name" id="name" class="form_control" placeholder="Символ элемента(анг)"><br>
+        {{ ckeditor.load(pkg_type="full") }}
+        {{ ckeditor.create() }}
+        <input type="submit" class="btn btn-success" value="Создать элемент">
+    </form>
+</div>
+{% endblock %}

@@ -70,7 +70,7 @@ def login_post():
         user = db.session.query(Users).filter(Users.nickname == nickname).first()
         print(user.password)
         if not user and not check_password_hash(password, user.password):
-            #Позже доработаю лучше
+            #please help me 
             redirect('/login')
         else:
             login_user(user)

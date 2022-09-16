@@ -34,7 +34,7 @@ def element(name):
 def redact(name):
     table_elem = Elements.query.filter_by(name=name).first_or_404()
     if request.method == 'POST':
-        table_elem.body = request.form.get('ckeditor')#
+        table_elem.body = request.form.get('ckeditor')
         table_elem.title = request.form.get('title')
         try:
             db.session.commit()
@@ -70,6 +70,7 @@ def login_post():
         user = db.session.query(Users).filter(Users.nickname == nickname).first()
         print(user.password)
         if not user and not check_password_hash(password, user.password):
+            #Позже доработаю лучше
             redirect('/login')
         else:
             login_user(user)
